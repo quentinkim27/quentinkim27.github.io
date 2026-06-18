@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About me</title>
+<meta name="description" content="Academic homepage about me." />
+<meta property="og:title" content="About me" />
+<meta property="og:description" content="Academic homepage about me." />
+<meta property="og:url" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/avatar.png" />
+<meta name="twitter:title" content="About me" />
+<meta name="twitter:description" content="Academic homepage about me." />
+<meta name="twitter:image" content="assets/avatar.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body data-page="about">
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo" aria-label="Home">
+      <span id="nav-logo-main" class="brand-first">Cheng</span><span id="nav-logo-suffix" class="brand-last">Kun</span>
+    </a>
+    <ul class="nav-links" id="nav-links"></ul>
+    <div class="nav-controls">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="zh" type="button">ZH</button>
+      </div>
+      <button class="btn-icon" title="Toggle theme" id="theme-btn" type="button">☀</button>
+    </div>
+  </div>
+</nav>
+
+<aside class="side-nav" id="side-nav" aria-label="About me page sections"></aside>
+
+<main class="page-main about-main">
+  <section id="education" class="about-band band-education">
+    <div class="section-label" id="section-edu-label"></div>
+    <h2 class="section-title reveal" id="section-edu-title"></h2>
+    <div class="edu-grid" id="edu-grid"></div>
+  </section>
+
+  <section id="skills" class="about-band band-skills">
+    <div class="section-label" id="section-skills-label"></div>
+    <h2 class="section-title reveal" id="section-skills-title"></h2>
+    <div class="skills-grid" id="skills-grid"></div>
+  </section>
+</main>
+
+<footer id="footer"></footer>
+<script src="src/js/config.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>
